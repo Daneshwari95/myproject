@@ -18,7 +18,7 @@ pipeline{
         }
         stage('CPU details'){
             steps{
-                sh 'lscpu'
+                sh 'lscpu | grep Mem'
             }
         }
         stage('Memory usage'){
