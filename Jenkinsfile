@@ -11,11 +11,6 @@ pipeline{
                 sh 'uptime'
             }
         }
-        stage('Server disk usage'){
-            steps{
-                sh 'df -h'
-            }
-        }
         stage('CPU details'){
             steps{
                 sh 'lscpu'
