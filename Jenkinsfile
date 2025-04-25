@@ -16,11 +16,6 @@ pipeline{
                 sh 'lscpu'
             }
         }
-        stage('Task manager'){
-            steps{
-                sh 'top'
-            }
-        }
         stage('Memory usage'){
             steps{
                 sh 'free -h'
