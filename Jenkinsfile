@@ -26,5 +26,7 @@ pipeline{
         stage('Date'){
             steps{
                 sh 'date'
+            }
+        }
     }
 }
